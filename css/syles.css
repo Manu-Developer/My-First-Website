@@ -261,7 +261,7 @@ a::after {
 .name,
 .email,
 .message {
-	width: 100%;
+	width: calc(100% - 2rem);
 	border-radius: 2rem;
 	border: none;
 	height: 2rem;
@@ -272,7 +272,6 @@ a::after {
 }
 
 .form-message .message {
-	width: 100%;
 	min-height: 250px;
 	resize: none;
 }
@@ -353,15 +352,8 @@ a::after {
 		align-self: center;
 	}
 	.name,
-	.email,
-	.message {
+	.email {
 		width: calc(100% - 2rem);
-	}
-	.form-message {
-		width: calc(100% - 1.2rem);
-	}
-	.message {
-		padding: 1.2rem 0 0 1.2rem;
 	}
 }
 /* Footer Queries */
