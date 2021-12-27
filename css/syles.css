@@ -15,7 +15,7 @@ html {
 
 /* Header Styles */
 
-.header {
+.main-content {
 	width: 100%;
 	margin-bottom: 3rem;
 }
@@ -231,10 +231,11 @@ a::after {
 
 /* Footer Styles*/
 .footer {
+	width: 100%;
+	height: auto;
 	background-image: url("../Svg/Wave-Svg.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: auto;
 	margin-top: 6rem;
 	padding-bottom: 2rem;
 }
