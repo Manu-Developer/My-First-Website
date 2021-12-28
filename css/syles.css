@@ -247,13 +247,13 @@ a::after {
 	padding: 2rem 2rem;
 	background-color: var(--white);
 }
-.form-grid__text h1 {
+.form-grid__text .title {
 	width: 100%;
 	font-size: 3.5rem;
 	font-weight: 700;
 	color: var(--violet1);
 }
-.form-grid__text p {
+.form-grid__text .text {
 	width: 100%;
 	font-size: 1.5rem;
 	font-weight: 400;
