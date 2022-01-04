@@ -1,9 +1,9 @@
-# Personal-Website.github.io
+## Personal Portfolio
 
 This is my first professional website using pure HTML and CSS, developed with lots of ❤️ and ☕.
 Hope you like it!
 
-### Final Proyect
+## Final Project
 
 ![Website Frame](https://user-images.githubusercontent.com/61896414/147997534-ad234e89-42c3-4817-b1b2-bbab693805dd.jpg)
 
