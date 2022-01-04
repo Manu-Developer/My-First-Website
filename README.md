@@ -1,6 +1,7 @@
 # Personal-Website.github.io
 
-This is my personal website 🌐, hope you like it!
+This is my first professional website using pure HTML and CSS, developed with lots of ❤️ and ☕.
+Hope you like it!
 
 ### Final Proyect
 
