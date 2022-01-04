@@ -1,7 +1,6 @@
 # Personal-Website.github.io
 
 Hello 👋 for all developers.
-Here you can see my first personal portfolio.
 
 ### Final Proyect
 
