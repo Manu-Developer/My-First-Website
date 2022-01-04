@@ -180,7 +180,7 @@ a::after {
 }
 .reviews-flex {
 	display: flex;
-	gap: 1rem;
+	gap: 4rem;
 }
 .reviews-flex__cards {
 	flex: 1;
@@ -246,6 +246,7 @@ a::after {
 	border-radius: 40px;
 	padding: 2rem 2rem;
 	background-color: var(--white);
+	column-gap: 4rem;
 }
 .form-grid__text h1 {
 	width: 100%;
@@ -301,9 +302,6 @@ a::after {
 		justify-content: center;
 	}
 	.left-column {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 		text-align: center;
 	}
 	.left-column__subtitle {
