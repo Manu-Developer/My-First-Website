@@ -12,6 +12,15 @@ html {
 	font-family: "Poppins", sans-serif;
 	scroll-behavior: smooth;
 }
+.img {
+	max-width: 100%;
+	height: auto;
+}
+.container {
+	max-width: 130rem;
+	margin: 0 auto;
+	padding: 0rem 2rem;
+}
 
 /* Header Styles */
 
@@ -19,15 +28,7 @@ html {
 	width: 100%;
 	margin-bottom: 3rem;
 }
-.img {
-	width: 100%;
-}
-.container {
-	max-width: 130rem;
-	margin: 0 auto;
-	padding: 0rem 2rem 0rem 2rem;
-}
-.container__navigation {
+.header {
 	width: 100%;
 	height: 100px;
 }
@@ -38,9 +39,8 @@ html {
 	flex-wrap: wrap;
 	gap: 2rem;
 	height: 100px;
-}
-.container__navigation__list {
 	padding-inline-start: 0;
+	margin: 0;
 }
 .container__navigation__list__link {
 	list-style: none;
@@ -118,6 +118,7 @@ a::after {
 .services {
 	background-color: var(--violet1);
 	padding-bottom: 4rem;
+	margin-bottom: 3rem;
 	width: 100%;
 }
 .services__title .title {
@@ -125,7 +126,6 @@ a::after {
 	text-align: center;
 	font-size: 3.5rem;
 	font-weight: 700;
-	margin: 0;
 	padding: 4rem 0 5rem 0;
 	color: var(--white);
 }
@@ -140,7 +140,7 @@ a::after {
 	height: 200px;
 	position: relative;
 }
-.grid-services__card img {
+.grid-services__card__image img {
 	width: 60px;
 	height: 60px;
 	position: absolute;
@@ -168,14 +168,16 @@ a::after {
 /* Services Styles*/
 
 /* Reviews Styles*/
-
+.reviews {
+	width: 100%;
+	margin-bottom: 4rem;
+}
 .reviews__title .title {
 	display: block;
 	text-align: center;
 	font-size: 3.5rem;
 	font-weight: 700;
-	margin: 0;
-	margin: 4rem 0 4rem 0;
+	padding: 1rem 0 4rem 0;
 	color: var(--violet1);
 }
 .reviews-flex {
@@ -236,7 +238,6 @@ a::after {
 	background-image: url("../Svg/Wave-Svg.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	margin-top: 6rem;
 	padding-bottom: 2rem;
 }
 .form-grid {
@@ -244,7 +245,7 @@ a::after {
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 1fr;
 	border-radius: 40px;
-	padding: 2rem 2rem;
+	padding: 2rem;
 	background-color: var(--white);
 	column-gap: 4rem;
 }
@@ -274,15 +275,13 @@ a::after {
 	padding: 1.2rem;
 	font-size: 1.5rem;
 }
-
 .form-message .message {
 	min-height: 250px;
 	resize: none;
 }
 .form-grid__right-column {
-	display: flex;
-	justify-content: center;
-	align-content: center;
+	display: grid;
+	place-items: center;
 }
 
 /* Footer Styles*/
@@ -299,6 +298,7 @@ a::after {
 }
 @media screen and (max-width: 768px) {
 	.container__navigation__list {
+		margin-top: 1rem;
 		justify-content: center;
 	}
 	.left-column {

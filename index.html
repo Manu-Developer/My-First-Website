@@ -38,9 +38,9 @@
 		<!-- Link Fonts -->
 	</head>
 	<body>
-		<!-- Main Starts-->
-		<div class="container">
-			<header class="container__navigation">
+		<!-- Header Starts-->	
+		<header class="header">
+			<nav class="container__navigation container">
 				<ul class="container__navigation__list">
 					<li class="container__navigation__list__link">
 						<a href="index.html">Home</a>
@@ -55,8 +55,13 @@
 						<a href="#contact-form">Contact</a>
 					</li>
 				</ul>
-			</header>
-			<main class="main-content">
+			</nav>
+		</header>
+	<!-- Header Ends -->
+
+	<!-- Main Starts-->
+		<main class="main-content">
+			<div class="container">
 				<div class="grid-container">
 					<div class="left-column">
 						<h1 class="left-column__title">
@@ -78,77 +83,77 @@
 						<img src="./Svg/Header-image.svg" alt="An Illustrative representation of me"/>
 					</div>
 				</div>
-			</main>
-		</div>
+			</div>
+		</main>
+	<!-- Main Ends -->
 
-		<!-- Main Ends -->
-
-		<!-- Services Starts -->
-		<section class="services" id="services">
-			<div class="container">
-				<div class="services__title">
-					<h2 class="title">Services</h2>
+	<!-- Services Starts -->
+	<section class="services" id="services">
+		<div class="container">
+			<div class="services__title">
+				<h2 class="title">Services</h2>
+			</div>
+			<div class="grid-services">
+				<div class="grid-services-cards">
+					<div class="grid-services__card__image">
+						<img loading="lazy" src="./Svg/Pincel-Svg.svg" alt="PaintBrush Illustration"/>
+					</div>
+					<div class="grid-services__card__text">
+						<p>
+							Lorem ipsum dolor sit amet consectetur,
+							adipiscing elit varius neque.Lorem ipsum
+							dolor sit amet consectetur, adipiscing elit
+							varius neque.
+						</p>
+					</div>
 				</div>
-				<div class="grid-services">
-					<div class="grid-services-cards">
-						<div class="grid-services__card">
-							<img loading="lazy" src="./Svg/Pincel-Svg.svg" alt="PaintBrush Illustration"/>
-						</div>
-						<div class="grid-services__card__text">
-							<p>
-								Lorem ipsum dolor sit amet consectetur,
-								adipiscing elit varius neque.Lorem ipsum
-								dolor sit amet consectetur, adipiscing elit
-								varius neque.
-							</p>
-						</div>
+				<div class="grid-services-cards">
+					<div class="grid-services__card__image">
+						<img loading="lazy" src="./Svg/Quality-Svg.svg" alt="Quality Illustration"/>
 					</div>
-					<div class="grid-services-cards">
-						<div class="grid-services__card">
-							<img loading="lazy" src="./Svg/Quality-Svg.svg" alt="Quality Illustration"/>
-						</div>
-						<div class="grid-services__card__text">
-							<p>
-								Lorem ipsum dolor sit amet consectetur,
-								adipiscing elit varius neque.Lorem ipsum
-								dolor sit amet consectetur, adipiscing elit
-								varius neque.
-							</p>
-						</div>
+					<div class="grid-services__card__text">
+						<p>
+							Lorem ipsum dolor sit amet consectetur,
+							adipiscing elit varius neque.Lorem ipsum
+							dolor sit amet consectetur, adipiscing elit
+							varius neque.
+						</p>
 					</div>
-					<div class="grid-services-cards">
-						<div class="grid-services__card">
-							<img loading="lazy" src="./Svg/Security-Svg.svg" alt="Security Illustration"/>
-						</div>
-						<div class="grid-services__card__text">
-							<p>
-								Lorem ipsum dolor sit amet consectetur,
-								adipiscing elit varius neque.Lorem ipsum
-								dolor sit amet consectetur, adipiscing elit
-								varius neque.
-							</p>
-						</div>
+				</div>
+				<div class="grid-services-cards">
+					<div class="grid-services__card__image">
+						<img loading="lazy" src="./Svg/Security-Svg.svg" alt="Security Illustration"/>
 					</div>
-					<div class="grid-services-cards">
-						<div class="grid-services__card">
-							<img loading="lazy" src="./Svg/Coding-Svg.svg" alt="Coding Illustration"/>
-						</div>
-						<div class="grid-services__card__text">
-							<p>
-								Lorem ipsum dolor sit amet consectetur,
-								adipiscing elit varius neque.Lorem ipsum
-								dolor sit amet consectetur, adipiscing elit
-								varius neque.
-							</p>
-						</div>
+					<div class="grid-services__card__text">
+						<p>
+							Lorem ipsum dolor sit amet consectetur,
+							adipiscing elit varius neque.Lorem ipsum
+							dolor sit amet consectetur, adipiscing elit
+							varius neque.
+						</p>
+					</div>
+				</div>
+				<div class="grid-services-cards">
+					<div class="grid-services__card__image">
+						<img loading="lazy" src="./Svg/Coding-Svg.svg" alt="Coding Illustration"/>
+					</div>
+					<div class="grid-services__card__text">
+						<p>
+							Lorem ipsum dolor sit amet consectetur,
+							adipiscing elit varius neque.Lorem ipsum
+							dolor sit amet consectetur, adipiscing elit
+							varius neque.
+						</p>
 					</div>
 				</div>
 			</div>
-		</section>
-		<!-- Services Ends -->
+		</div>
+	</section>
+	<!-- Services Ends -->
 
-		<!-- Reviews Starts -->
-		<section class="reviews container" id="reviews">
+	<!-- Reviews Starts -->
+	<section class="reviews" id="reviews">
+		<div class="container">
 			<div class="reviews__title">
 				<h2 class="title">150+ Happy Clients</h2>
 			</div>
@@ -197,38 +202,40 @@
 				</div>
 				
 			</div>
-		</section>
-		<!-- Reviews Ends -->
+		</div>
+	</section>
+	<!-- Reviews Ends -->
 
-		<!-- Footer Starts -->
-		<footer class="footer" id="contact-form">
-			<div class="container">
-				<form action="" class="form-grid">
-					<div class="form-grid__left-column">
-						<div class="form-grid__text">
-							<h2 class="title">Lets talk!</h2>
-							<p class="text">
-								Write any suggestion you want and we will
-								reply you as fast as possible.
-							</p>
-						</div>
-						<div class="form-name">
-							<input type="text" class="name" id="name" placeholder="Name"/>
-						</div>
-						<div class="form-email">
-							<input type="email" class="email" id="email" placeholder="E-mail"/>
-						</div>
-						<div class="form-message">
-							<textarea name="message" id="message" class="message" cols="30" rows="10" placeholder="Message"></textarea>
-						</div>
-						<input type="button" class="form-grid__btn" value="Send Message">
+	<!-- Footer Starts -->
+	<footer class="footer" id="contact-form">
+		<div class="container">
+			<form action="" class="form-grid">
+				<div class="form-grid__left-column">
+					<div class="form-grid__text">
+						<h2 class="title">Lets talk!</h2>
+						<p class="text">
+							Write any suggestion you want and we will
+							reply you as fast as possible.
+						</p>
 					</div>
-					<div class="form-grid__right-column">
-						<img loading="lazy" src="./Svg/Footer-image.svg" alt="An Illustration of a girl for the contact form"/>
+					<div class="form-name">
+						<input type="text" class="name" id="name" placeholder="Name"/>
 					</div>
-				</form>
-			</div>
-		</footer>
+					<div class="form-email">
+						<input type="email" class="email" id="email" placeholder="E-mail"/>
+					</div>
+					<div class="form-message">
+						<textarea name="message" id="message" class="message" cols="30" rows="10" placeholder="Message"></textarea>
+					</div>
+					<input type="button" class="form-grid__btn" value="Send Message">
+				</div>
+				<div class="form-grid__right-column">
+					<img loading="lazy" src="./Svg/Footer-image.svg" alt="An Illustration of a girl for the contact form"/>
+				</div>
+			</form>
+		</div>
+	</footer>
+
 		<!-- Footer Ends -->
 	</body>
 </html>
