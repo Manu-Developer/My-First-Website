@@ -7,6 +7,7 @@
 	--violet4: #bfd7ff;
 	--lightgreen: #e2fdff;
 }
+
 html {
 	font-size: 62.5%;
 	font-family: "Poppins", sans-serif;
@@ -74,20 +75,24 @@ a::after {
 	height: auto;
 }
 .left-column__title {
-	font-size: 5.5rem;
+	font-size: clamp(4rem, 5vw, 6rem);
 	text-transform: uppercase;
+	margin-bottom: 3rem;
 }
 .left-column__title span {
 	color: var(--violet1);
 }
 .left-column__subtitle {
-	font-size: 3rem;
+	font-size: clamp(2.5rem, 3vw, 3rem);
 	font-weight: 400;
+	margin-bottom: 3rem;
 }
 .left-column__text {
-	font-size: 1.8rem;
+	font-size: clamp(1.8rem, 1.8vw, 2rem);
 	font-weight: 400;
 	line-height: 2.3rem;
+	margin: 0;
+	margin-bottom: 3rem;
 }
 .left-column__cta,
 .form-grid__btn {
@@ -99,10 +104,9 @@ a::after {
 	color: var(--white);
 	font-size: 1.5rem;
 	font-weight: 700;
-	margin-top: 1rem;
 	cursor: pointer;
 	transition: all 0.4s;
-	margin-bottom: 3rem;
+	margin-bottom: 1rem;
 }
 .left-column__cta:hover,
 .form-grid__btn:hover {
@@ -283,6 +287,9 @@ a::after {
 	display: grid;
 	place-items: center;
 }
+.form-grid__btn {
+	margin-top: 1rem;
+}
 
 /* Footer Styles*/
 
@@ -298,14 +305,12 @@ a::after {
 }
 @media screen and (max-width: 768px) {
 	.container__navigation__list {
-		margin-top: 1rem;
+		margin-top: 2rem;
 		justify-content: center;
+		align-content: center;
 	}
 	.left-column {
 		text-align: center;
-	}
-	.left-column__subtitle {
-		margin-top: 1rem;
 	}
 }
 /* Header Queries */
