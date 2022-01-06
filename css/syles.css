@@ -305,7 +305,6 @@ a::after {
 }
 @media screen and (max-width: 768px) {
 	.container__navigation__list {
-		margin-top: 2rem;
 		justify-content: center;
 		align-content: center;
 	}
