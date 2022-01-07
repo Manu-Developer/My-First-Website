@@ -326,9 +326,8 @@ a::after {
 /* Services Queries */
 @media screen and (max-width: 768px) {
 	.grid-services {
-		display: grid;
 		grid-template-columns: 1fr;
-		gap: 4rem;
+		gap: 6rem;
 	}
 }
 /* Services Queries */
