@@ -180,12 +180,14 @@ a::after {
 	width: 100%;
 	margin-bottom: 4rem;
 }
+.reviews__title {
+	margin: 4rem 0;
+}
 .reviews__title .title {
 	display: block;
 	text-align: center;
 	font-size: 3.5rem;
 	font-weight: 700;
-	margin: 4rem 0;
 	color: var(--violet1);
 }
 .reviews-flex {
@@ -200,6 +202,7 @@ a::after {
 }
 .reviews-flex__cards__flex {
 	display: flex;
+	align-items: center;
 }
 .reviews-flex__cards__image-1 {
 	width: 100px;
