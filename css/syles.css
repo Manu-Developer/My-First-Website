@@ -7,7 +7,12 @@
 	--violet4: #bfd7ff;
 	--lightgreen: #e2fdff;
 }
-
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+}
 html {
 	font-size: 62.5%;
 	font-family: "Poppins", sans-serif;
@@ -122,7 +127,6 @@ a::after {
 .services {
 	background-color: var(--violet1);
 	padding-bottom: 4rem;
-	margin-bottom: 3rem;
 	width: 100%;
 }
 .services__title .title {
@@ -181,7 +185,7 @@ a::after {
 	text-align: center;
 	font-size: 3.5rem;
 	font-weight: 700;
-	padding: 1rem 0 4rem 0;
+	margin: 4rem 0;
 	color: var(--violet1);
 }
 .reviews-flex {
@@ -192,7 +196,7 @@ a::after {
 	flex: 1;
 	background-color: var(--lightgreen);
 	border-radius: 20px;
-	padding: 1rem;
+	padding: 1.5rem;
 }
 .reviews-flex__cards__flex {
 	display: flex;
@@ -216,18 +220,19 @@ a::after {
 	border-radius: 50%;
 }
 .reviews-flex__cards__person {
-	padding-left: 1rem;
+	margin-left: 1rem;
 }
 .reviews-flex__cards__person__name {
 	font-size: 2rem;
 	font-weight: 700;
+	margin-bottom: 1rem;
 }
 .reviews-flex__cards__person__ceo {
 	font-size: 1.5rem;
 	font-weight: 400;
 }
 .reviews-flex__cards__text {
-	padding-top: 1rem;
+	margin-top: 1rem;
 	font-size: 1.5rem;
 	text-align: justify;
 	line-height: 2.4rem;
@@ -258,6 +263,7 @@ a::after {
 	font-size: 3.5rem;
 	font-weight: 700;
 	color: var(--violet1);
+	margin-bottom: 2rem;
 }
 .form-grid__text .text {
 	width: 100%;
@@ -265,7 +271,7 @@ a::after {
 	font-weight: 400;
 	line-height: 2.3rem;
 	color: var(--blueDark);
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
 }
 .name,
 .email,
@@ -288,7 +294,7 @@ a::after {
 	place-items: center;
 }
 .form-grid__btn {
-	margin-top: 1rem;
+	margin: 0rem;
 }
 
 /* Footer Styles*/
