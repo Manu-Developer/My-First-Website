@@ -1,6 +1,6 @@
 ## Personal Portfolio
 
-This is my first professional website using pure HTML and CSS, developed with lots of ❤️ and ☕.
+This is my first professional website using HTML and CSS, developed with lots of ❤️ and ☕.
 Hope you like it!
 
 ## Final Project
