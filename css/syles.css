@@ -27,7 +27,7 @@ a {
 	text-decoration: none;
 }
 ::-webkit-scrollbar {
-	width: 2rem;
+	width: 1.6rem;
 	height: 1rem;
 	background: var(--white);
 }
@@ -184,6 +184,7 @@ a::after {
 	text-align: center;
 	font-size: 1.5rem;
 	padding: 1rem;
+	margin-top: 2rem;
 }
 /* Services Styles*/
 
@@ -216,8 +217,8 @@ a::after {
 	display: flex;
 	align-items: center;
 }
-.reviews-flex__cards__image-1, 
-.reviews-flex__cards__image-2{
+.reviews-flex__cards__image-1,
+.reviews-flex__cards__image-2 {
 	width: 100px;
 	height: 100px;
 	background-position: center;
@@ -261,13 +262,9 @@ a::after {
 	padding-bottom: 2rem;
 }
 .form-grid {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 1fr;
 	border-radius: 40px;
 	padding: 2rem;
 	background-color: var(--white);
-	column-gap: 4rem;
 }
 .form-grid__text .title {
 	width: 100%;
@@ -327,6 +324,9 @@ a::after {
 	.left-column__cta {
 		margin: 0 auto 1rem;
 	}
+	.right-column {
+		text-align: center;
+	}
 }
 /* Header Queries */
 
@@ -348,18 +348,21 @@ a::after {
 /* Reviews Queries */
 
 /* Footer Queries */
+@media screen and (min-width: 898px) {
+	.form-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 4rem;
+	}
+}
 @media screen and (max-width: 898px) {
 	.form-grid__right-column {
 		display: none;
 	}
-	.form-grid {
-		grid-template-columns: 1fr;
-	}
-	.form-grid__btn{
+	.form-grid__btn {
 		display: block;
 		margin: 0 auto;
 	}
-	
 }
 /* Footer Queries */
 
