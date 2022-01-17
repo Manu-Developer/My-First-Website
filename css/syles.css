@@ -28,7 +28,6 @@ a {
 }
 ::-webkit-scrollbar {
 	width: 1.6rem;
-	height: 1rem;
 	background: var(--white);
 }
 ::-webkit-scrollbar-thumb {
@@ -183,8 +182,7 @@ a::after {
 .grid-services__card__text p {
 	text-align: center;
 	font-size: 1.5rem;
-	padding: 1rem;
-	margin-top: 2rem;
+	background-color: red;
 }
 /* Services Styles*/
 
