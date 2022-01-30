@@ -10,8 +10,8 @@
 *,
 ::before,
 ::after {
-	margin: 0;
 	padding: 0;
+	margin: 0;
 	box-sizing: border-box;
 }
 html {
@@ -37,8 +37,14 @@ a {
 }
 .container {
 	max-width: 130rem;
-	margin: 0 auto;
 	padding: 0rem 2rem;
+	margin: 0 auto;
+}
+.title {
+	display: block;
+	text-align: center;
+	font-size: 3.5rem;
+	font-weight: 700;
 }
 
 /* Header Styles */
@@ -51,30 +57,28 @@ a {
 	height: 100px;
 }
 .navigation__list {
+	height: 100px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: flex-end;
 	align-items: center;
-	flex-wrap: wrap;
 	gap: 2rem;
-	height: 100px;
-	padding-inline-start: 0;
-	margin: 0;
 }
 .navigation__list__link {
 	list-style: none;
 }
 .navigation__list__link a {
+	position: relative;
 	color: var(--blueDark);
 	font-size: 1.8rem;
 	transition: all 0.3s;
-	position: relative;
 }
 a::after {
 	content: "";
 	position: absolute;
 	background-color: var(--violet1);
-	height: 3px;
 	width: 0%;
+	height: 3px;
 	left: 0;
 	bottom: -10px;
 	transition: all 0.3s;
@@ -84,7 +88,8 @@ a::after {
 	transition: all 0.3s;
 }
 .right-column {
-	text-align: end;
+	display: grid;
+	place-items: end;
 }
 .right-column img {
 	max-width: 90%;
@@ -107,29 +112,27 @@ a::after {
 	font-size: clamp(1.8rem, 1.8vw, 2rem);
 	font-weight: 400;
 	line-height: 2.3rem;
-	margin: 0;
 	margin-bottom: 3rem;
 }
 .left-column__cta,
 .form-grid__btn {
 	display: block;
 	width: 200px;
-	border-radius: 200px;
-	border: none;
-	background-color: var(--violet1);
 	border: 1px solid var(--violet1);
+	border-radius: 200px;
+	background-color: var(--violet1);
 	color: var(--white);
 	font-size: 1.5rem;
 	font-weight: 700;
+	text-align: center;
 	cursor: pointer;
 	transition: all 0.4s;
-	text-align: center;
 	padding: 1.2rem 0;
 }
 .left-column__cta:hover,
 .form-grid__btn:hover {
-	background-color: #fff;
 	color: var(--violet1);
+	background-color: #fff;
 	border: 1px solid var(--violet1);
 	transition: all 0.4s;
 }
@@ -137,17 +140,13 @@ a::after {
 
 /* Services Styles*/
 .services {
+	width: 100%;
 	background-color: var(--violet1);
 	padding-bottom: 4rem;
-	width: 100%;
 }
 .services__title .title {
-	display: block;
-	text-align: center;
-	font-size: 3.5rem;
-	font-weight: 700;
-	padding: 4rem 0 5rem 0;
 	color: var(--white);
+	padding: 4rem 0 5rem 0;
 }
 .grid-services {
 	display: grid;
@@ -156,28 +155,28 @@ a::after {
 }
 .grid-services-cards {
 	position: relative;
+	min-height: 200px;
 	background-color: var(--violet2);
 	border-radius: 12px;
-	min-height: 200px;
 	padding: 1.5rem;
 }
 .grid-services__card__image img {
+	position: absolute;
 	width: 80px;
 	height: 80px;
-	position: absolute;
+	background-color: var(--white);
 	top: -3rem;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
 	border-radius: 50%;
-	background-color: var(--white);
 	padding: 1rem;
 }
 .grid-services__card__text {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	line-height: 2.3rem;
 }
 .grid-services__card__text p {
@@ -195,10 +194,6 @@ a::after {
 	margin: 4rem 0;
 }
 .reviews__title .title {
-	display: block;
-	text-align: center;
-	font-size: 3.5rem;
-	font-weight: 700;
 	color: var(--violet1);
 }
 .reviews-flex {
@@ -243,10 +238,10 @@ a::after {
 	font-weight: 400;
 }
 .reviews-flex__cards__text {
-	margin-top: 1rem;
 	font-size: 1.5rem;
 	text-align: justify;
 	line-height: 2.4rem;
+	margin-top: 1rem;
 }
 /* Reviews Styles*/
 
@@ -260,36 +255,34 @@ a::after {
 	padding-bottom: 2rem;
 }
 .form-grid {
+	background-color: var(--white);
 	border-radius: 40px;
 	padding: 2rem;
-	background-color: var(--white);
 }
 .form-grid__text .title {
-	width: 100%;
-	font-size: 3.5rem;
-	font-weight: 700;
 	color: var(--violet1);
+	text-align: left;
 	margin-bottom: 2rem;
 }
 .form-grid__text .text {
 	width: 100%;
+	color: var(--blueDark);
 	font-size: 1.5rem;
 	font-weight: 400;
 	line-height: 2.3rem;
-	color: var(--blueDark);
 	margin-bottom: 2rem;
 }
 .name,
 .email,
 .message {
 	width: 100%;
-	border-radius: 2rem;
-	border: none;
 	height: 2rem;
 	background-color: var(--violet4);
-	margin-bottom: 2rem;
-	padding: 2rem;
+	border: none;
+	border-radius: 2rem;
 	font-size: 1.5rem;
+	padding: 2rem;
+	margin-bottom: 2rem;
 }
 .form-message .message {
 	min-height: 250px;
@@ -303,6 +296,12 @@ a::after {
 
 /* Media Queries */
 
+@media screen and (max-width: 1200px) {
+	.container {
+		max-width: 110rem;
+	}
+}
+
 /* Header Queries */
 @media screen and (min-width: 768px) {
 	.grid-container {
@@ -314,7 +313,6 @@ a::after {
 @media screen and (max-width: 768px) {
 	.navigation__list {
 		justify-content: center;
-		align-content: center;
 	}
 	.left-column {
 		text-align: center;
@@ -323,7 +321,7 @@ a::after {
 		margin: 0 auto 1rem;
 	}
 	.right-column {
-		text-align: center;
+		place-items: center;
 	}
 }
 /* Header Queries */
