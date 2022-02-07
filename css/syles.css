@@ -92,7 +92,7 @@ a::after {
 	place-items: end;
 }
 .right-column img {
-	max-width: 90%;
+	max-width: 565px;
 	height: auto;
 }
 .left-column__title {
@@ -261,8 +261,8 @@ a::after {
 }
 .form-grid__text .title {
 	color: var(--violet1);
-	text-align: left;
 	margin-bottom: 2rem;
+	text-align: start;
 }
 .form-grid__text .text {
 	width: 100%;
@@ -276,12 +276,12 @@ a::after {
 .email,
 .message {
 	width: 100%;
-	height: 2rem;
+	height: 4rem;
 	background-color: var(--violet4);
 	border: none;
 	border-radius: 2rem;
 	font-size: 1.5rem;
-	padding: 2rem;
+	padding: 1rem 1.5rem;
 	margin-bottom: 2rem;
 }
 .form-message .message {
@@ -303,7 +303,7 @@ a::after {
 }
 
 /* Header Queries */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 	.grid-container {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -322,6 +322,9 @@ a::after {
 	}
 	.right-column {
 		place-items: center;
+	}
+	.right-column img {
+		max-width: 500px;
 	}
 }
 /* Header Queries */
@@ -356,7 +359,11 @@ a::after {
 		column-gap: 4rem;
 	}
 }
-@media screen and (max-width: 898px) {
+@media screen and (max-width: 897px) {
+	.form-grid__text .title,
+	.text {
+		text-align: center;
+	}
 	.form-grid__right-column {
 		display: none;
 	}
