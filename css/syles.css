@@ -144,7 +144,7 @@ a::after {
 	background-color: var(--violet1);
 	padding-bottom: 4rem;
 }
-.services__title .title {
+.services__title {
 	color: var(--white);
 	padding: 4rem 0 5rem 0;
 }
@@ -162,8 +162,8 @@ a::after {
 }
 .grid-services__card__image img {
 	position: absolute;
-	width: 80px;
-	height: 80px;
+	width: 85px;
+	height: 85px;
 	background-color: var(--white);
 	top: -3rem;
 	left: 0;
@@ -181,6 +181,7 @@ a::after {
 }
 .grid-services__card__text p {
 	text-align: center;
+	font-weight: 400;
 	font-size: 1.5rem;
 }
 /* Services Styles*/
@@ -193,7 +194,7 @@ a::after {
 .reviews__title {
 	margin: 4rem 0;
 }
-.reviews__title .title {
+.reviews__title {
 	color: var(--violet1);
 }
 .reviews-flex {
@@ -209,6 +210,7 @@ a::after {
 .reviews-flex__cards__flex {
 	display: flex;
 	align-items: center;
+	margin-bottom: 1rem;
 }
 .reviews-flex__cards__image-1,
 .reviews-flex__cards__image-2 {
@@ -234,14 +236,13 @@ a::after {
 	margin-bottom: 1rem;
 }
 .reviews-flex__cards__person__ceo {
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	font-weight: 400;
 }
 .reviews-flex__cards__text {
 	font-size: 1.5rem;
 	text-align: justify;
 	line-height: 2.4rem;
-	margin-top: 1rem;
 }
 /* Reviews Styles*/
 
