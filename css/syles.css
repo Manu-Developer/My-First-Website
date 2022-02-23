@@ -333,7 +333,7 @@ a::after {
 /* Header Queries */
 
 /* Services Queries */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 935px) {
 	.grid-services {
 		grid-template-columns: 1fr;
 		gap: 6rem;
@@ -347,7 +347,7 @@ a::after {
 /* Services Queries */
 
 /* Reviews Queries */
-@media screen and (max-width: 975px) {
+@media screen and (max-width: 935px) {
 	.reviews-flex {
 		flex-direction: column;
 	}
