@@ -87,35 +87,35 @@ a::after {
 	width: 100%;
 	transition: all 0.3s;
 }
-.right-column {
+.grid-main__right-column {
 	display: grid;
 	place-items: end;
 }
-.right-column img {
+.grid-main__right-column img {
 	max-width: 565px;
 	height: auto;
 }
-.left-column__title {
+.grid-main__left-column__title {
 	font-size: clamp(4rem, 5vw, 6rem);
 	text-transform: uppercase;
 	margin-bottom: 3rem;
 }
-.left-column__title span {
+.grid-main__left-column__title span {
 	color: var(--violet1);
 }
-.left-column__subtitle {
+.grid-main__left-column__subtitle {
 	font-size: clamp(2.5rem, 3vw, 3rem);
 	font-weight: 400;
 	margin-bottom: 3rem;
 }
-.left-column__text {
+.grid-main__left-column__text {
 	font-size: clamp(1.8rem, 1.8vw, 2rem);
 	font-weight: 400;
 	line-height: 2.3rem;
 	margin-bottom: 3rem;
 }
-.left-column__cta,
-.form-grid__btn {
+.grid-main__left-column__cta,
+.grid-form__left-column__btn {
 	display: block;
 	width: 200px;
 	border: 1px solid var(--violet1);
@@ -129,8 +129,8 @@ a::after {
 	transition: all 0.4s;
 	padding: 1.2rem 0;
 }
-.left-column__cta:hover,
-.form-grid__btn:hover {
+.grid-main__left-column__cta:hover,
+.grid-form__left-column__btn:hover {
 	color: var(--violet1);
 	background-color: #fff;
 	border: 1px solid var(--violet1);
@@ -153,14 +153,14 @@ a::after {
 	grid-template-columns: repeat(2, 1fr);
 	gap: 4rem;
 }
-.grid-services-cards {
+.grid-services__card {
 	position: relative;
 	min-height: 200px;
 	background-color: var(--violet2);
 	border-radius: 12px;
 	padding: 1.5rem;
 }
-.grid-services__card__image img {
+.grid-services__card__icon {
 	position: absolute;
 	width: 85px;
 	height: 85px;
@@ -177,11 +177,11 @@ a::after {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	line-height: 2.3rem;
 }
 .grid-services__card__text p {
 	text-align: center;
 	font-weight: 400;
+	line-height: 2.3rem;
 	font-size: 1.5rem;
 }
 /* Services Styles*/
@@ -197,49 +197,41 @@ a::after {
 .reviews__title {
 	color: var(--violet1);
 }
-.reviews-flex {
+.flex-reviews {
 	display: flex;
 	gap: 4rem;
 }
-.reviews-flex__cards {
+.flex-reviews__card {
 	flex: 1;
 	background-color: var(--lightgreen);
 	border-radius: 20px;
 	padding: 1.5rem;
 }
-.reviews-flex__cards__flex {
+.flex-reviews__card__flex-info {
 	display: flex;
 	align-items: center;
 	margin-bottom: 1rem;
 }
-.reviews-flex__cards__image-1,
-.reviews-flex__cards__image-2 {
+.flex-reviews__card__flex-info__image-1,
+.flex-reviews__card__flex-info__image-2 {
 	width: 100px;
 	height: 100px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	object-fit: cover;
 	border-radius: 50%;
 }
-.reviews-flex__cards__image-1 {
-	background-image: url("../img/Man-1.jpg");
-}
-.reviews-flex__cards__image-2 {
-	background-image: url("../img/Man-2.jpg");
-}
-.reviews-flex__cards__person {
+.flex-reviews__card__flex-info__person {
 	margin-left: 1rem;
 }
-.reviews-flex__cards__person__name {
+.flex-reviews__card__flex-info__person-name {
 	font-size: 2rem;
 	font-weight: 700;
 	margin-bottom: 1rem;
 }
-.reviews-flex__cards__person__ceo {
+.flex-reviews__card__flex-info__person-ceo {
 	font-size: 1.7rem;
 	font-weight: 400;
 }
-.reviews-flex__cards__text {
+.flex-reviews__card__text {
 	font-size: 1.5rem;
 	text-align: justify;
 	line-height: 2.4rem;
@@ -255,20 +247,20 @@ a::after {
 	background-size: cover;
 	padding-bottom: 2rem;
 }
-.form-grid {
+.grid-form {
 	background-color: var(--white);
 	border-radius: 40px;
 	padding: 2rem;
 }
-.form-grid__text {
+.grid-form__left-column__text {
 	margin-bottom: 2rem;
 }
-.form-grid__text .title {
+.grid-form__left-column__text .title {
 	color: var(--violet1);
 	margin-bottom: 2rem;
 	text-align: start;
 }
-.form-grid__text .text {
+.grid-form__left-column__text p {
 	width: 100%;
 	color: var(--blueDark);
 	font-size: 1.5rem;
@@ -287,11 +279,11 @@ a::after {
 	padding: 1rem 1.5rem;
 	margin-bottom: 2rem;
 }
-.form-grid__left-column .message {
+.grid-form__left-column .message {
 	min-height: 250px;
 	resize: none;
 }
-.form-grid__right-column {
+.grid-form__right-column {
 	display: grid;
 	place-items: center;
 }
@@ -307,7 +299,7 @@ a::after {
 
 /* Header Queries */
 @media screen and (min-width: 769px) {
-	.grid-container {
+	.grid-main {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		align-items: center;
@@ -317,16 +309,16 @@ a::after {
 	.navigation__list {
 		justify-content: center;
 	}
-	.left-column {
+	.grid-main__left-column {
 		text-align: center;
 	}
-	.left-column__cta {
+	.grid-main__left-column__cta {
 		margin: 0 auto 1rem;
 	}
-	.right-column {
+	.grid-main__right-column {
 		place-items: center;
 	}
-	.right-column img {
+	.grid-main__right-column img {
 		max-width: 500px;
 	}
 }
@@ -340,7 +332,7 @@ a::after {
 	}
 }
 @media screen and (max-width: 465px) {
-	.grid-services__card__text p {
+	.grid-services__card__text {
 		padding-top: 3.5rem;
 	}
 }
@@ -348,7 +340,7 @@ a::after {
 
 /* Reviews Queries */
 @media screen and (max-width: 935px) {
-	.reviews-flex {
+	.flex-reviews {
 		flex-direction: column;
 	}
 }
@@ -356,21 +348,21 @@ a::after {
 
 /* Footer Queries */
 @media screen and (min-width: 898px) {
-	.form-grid {
+	.grid-form {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		column-gap: 4rem;
 	}
 }
 @media screen and (max-width: 897px) {
-	.form-grid__text .title,
-	.text {
+	.grid-form__left-column__text .title,
+	.grid-form__left-column__text p {
 		text-align: center;
 	}
-	.form-grid__right-column {
+	.grid-form__right-column {
 		display: none;
 	}
-	.form-grid__btn {
+	.grid-form__left-column__btn {
 		display: block;
 		margin: 0 auto;
 	}

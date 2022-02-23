@@ -62,14 +62,14 @@
 		<!-- Main Starts-->
 		<main class="main-content">
 			<div class="container">
-				<div class="grid-container">
-					<div class="left-column">
-						<h1 class="left-column__title">Hi I'm <span>Manuel</span></h1>
-						<h2 class="left-column__subtitle">A Web Developer & UI Designer</h2>
-						<p class="left-column__text">I design and develop experiences that make people lives simple.</p>
-						<a class="left-column__cta" href="#services">Explore Me</a>
+				<div class="grid-main">
+					<div class="grid-main__left-column">
+						<h1 class="grid-main__left-column__title">Hi I'm <span>Manuel</span></h1>
+						<h2 class="grid-main__left-column__subtitle">A Web Developer & UI Designer</h2>
+						<p class="grid-main__left-column__text">I design and develop experiences that make people lives simple.</p>
+						<a class="grid-main__left-column__cta" href="#services">Explore Me</a>
 					</div>
-					<div class="right-column">
+					<div class="grid-main__right-column">
 						<img src="./img/header-image.svg" alt="An Illustrative representation of me" />
 					</div>
 				</div>
@@ -82,34 +82,26 @@
 			<div class="container">
 				<h2 class="services__title title">Services</h2>
 				<div class="grid-services">
-					<div class="grid-services-cards">
-						<div class="grid-services__card__image">
-							<img loading="lazy" src="./img/brush.svg" alt="PaintBrush Illustration" />
-						</div>
+					<div class="grid-services__card">
+						<img class="grid-services__card__icon" loading="lazy" src="./img/brush.svg" alt="PaintBrush Illustration" />
 						<div class="grid-services__card__text">
 							<p>I provide a full personal service when it comes to the design of a website. Always improving it based on the customer requirements and needs.</p>
 						</div>
 					</div>
-					<div class="grid-services-cards">
-						<div class="grid-services__card__image">
-							<img loading="lazy" src="./img/quality.svg" alt="Quality Illustration" />
-						</div>
+					<div class="grid-services__card">
+						<img class="grid-services__card__icon" loading="lazy" src="./img/quality.svg" alt="Quality Illustration" />
 						<div class="grid-services__card__text">
 							<p>I always try to make the website of my clients accessible for everyone, which means, no matter if the visitors are blind or deaf, they will be able to visit the website without problems.</p>
 						</div>
 					</div>
-					<div class="grid-services-cards">
-						<div class="grid-services__card__image">
-							<img loading="lazy" src="./img/security.svg" alt="Security Illustration" />
-						</div>
+					<div class="grid-services__card">
+						<img class="grid-services__card__icon" loading="lazy" src="./img/security.svg" alt="Security Illustration" />
 						<div class="grid-services__card__text">
 							<p>About the security of the websites, my clients won’t have to worry. Thanks to my technical skills, hackers won’t have access to the personal information of the users.</p>
 						</div>
 					</div>
-					<div class="grid-services-cards">
-						<div class="grid-services__card__image">
-							<img loading="lazy" src="./img/coding.svg" alt="Coding Illustration" />
-						</div>
+					<div class="grid-services__card">
+						<img class="grid-services__card__icon" loading="lazy" src="./img/coding.svg" alt="Coding Illustration" />
 						<div class="grid-services__card__text">
 							<p>I am constantly looking for the best ways to design and organize the structure of the websites in order to make them as scalable as possible if the client wants to include new functionalities in the future.</p>
 						</div>
@@ -123,26 +115,26 @@
 		<section class="reviews" id="reviews">
 			<div class="container">
 				<h2 class="reviews__title title">150+ Happy Clients</h2>
-				<div class="reviews-flex">
-					<div class="reviews-flex__cards">
-						<div class="reviews-flex__cards__flex">
-							<div class="reviews-flex__cards__image-1"></div>
-							<div class="reviews-flex__cards__person">
-								<p class="reviews-flex__cards__person__name">Patrick Jhonson</p>
-								<p class="reviews-flex__cards__person__ceo">CEO of Anetra</p>
+				<div class="flex-reviews">
+					<div class="flex-reviews__card">
+						<div class="flex-reviews__card__flex-info">
+							<img class="flex-reviews__card__flex-info__image-1" src="./img/Man-1.jpg" alt="photo of the ceo of Anetra" />
+							<div class="flex-reviews__card__flex-info__person">
+								<p class="flex-reviews__card__flex-info__person-name">Patrick Jhonson</p>
+								<p class="flex-reviews__card__flex-info__person-ceo">CEO of Anetra</p>
 							</div>
 						</div>
-						<p class="reviews-flex__cards__text">I worked together with Manuel developing a website a few months ago and I met a person with great logical and problem-solving skills. In addition to this, he has a very good sense of aesthetics, so, you will find a great designer. I hope to have the opportunity to work with him again.</p>
+						<p class="flex-reviews__card__text">I worked together with Manuel developing a website a few months ago and I met a person with great logical and problem-solving skills. In addition to this, he has a very good sense of aesthetics, so, you will find a great designer. I hope to have the opportunity to work with him again.</p>
 					</div>
-					<div class="reviews-flex__cards">
-						<div class="reviews-flex__cards__flex">
-							<div class="reviews-flex__cards__image-2"></div>
-							<div class="reviews-flex__cards__person">
-								<p class="reviews-flex__cards__person__name">Freddy Vega</p>
-								<p class="reviews-flex__cards__person__ceo">Ceo of Platzi</p>
+					<div class="flex-reviews__card">
+						<div class="flex-reviews__card__flex-info">
+							<img class="flex-reviews__card__flex-info__image-2" src="./img/Man-2.jpg" alt="Photo of the ceo of Platzi" />
+							<div class="flex-reviews__card__flex-info__person">
+								<p class="flex-reviews__card__flex-info__person-name">Freddy Vega</p>
+								<p class="flex-reviews__card__flex-info__person-ceo">Ceo of Platzi</p>
 							</div>
 						</div>
-						<p class="reviews-flex__cards__text">Manuel has not only great technical skills, but his soft skills with the customer/end user are also excellent. He's a resourceful, positive colleague, always willing to solve the challenge at hand. He will do the job even if it's not easy, getting on well with his colleagues in the process. I would not hesitate to work with him again.</p>
+						<p class="flex-reviews__card__text">Manuel has not only great technical skills, but his soft skills with the customer/end user are also excellent. He's a resourceful, positive colleague, always willing to solve the challenge at hand. He will do the job even if it's not easy, getting on well with his colleagues in the process. I would not hesitate to work with him again.</p>
 					</div>
 				</div>
 			</div>
@@ -152,18 +144,18 @@
 		<!-- Footer Starts -->
 		<footer class="footer" id="contact-form">
 			<div class="container">
-				<form action="" class="form-grid">
-					<div class="form-grid__left-column">
-						<div class="form-grid__text">
+				<form action="" class="grid-form">
+					<div class="grid-form__left-column">
+						<div class="grid-form__left-column__text">
 							<h2 class="title">Lets talk!</h2>
-							<p class="text">Write any suggestion you want and we will reply you as fast as possible.</p>
+							<p>Write any suggestion you want and we will reply you as fast as possible.</p>
 						</div>
 						<input type="text" class="name" id="name" placeholder="Name" />
 						<input type="email" class="email" id="email" placeholder="E-mail" />
 						<textarea name="message" id="message" class="message" placeholder="Message"></textarea>
-						<input type="button" class="form-grid__btn" value="Send Message" />
+						<input type="button" class="grid-form__left-column__btn" value="Send Message" />
 					</div>
-					<div class="form-grid__right-column">
+					<div class="grid-form__right-column">
 						<img loading="lazy" src="./img/footer-image.svg" alt="An Illustration of a girl for the contact form" />
 					</div>
 				</form>
