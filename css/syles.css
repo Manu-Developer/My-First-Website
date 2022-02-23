@@ -250,7 +250,7 @@ a::after {
 .footer {
 	width: 100%;
 	height: auto;
-	background-image: url("../svg/footer-background.svg");
+	background-image: url("../img/footer-background.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-bottom: 2rem;
