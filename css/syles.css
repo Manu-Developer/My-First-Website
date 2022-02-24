@@ -309,6 +309,9 @@ a::after {
 	}
 }
 @media screen and (max-width: 768px) {
+	.navigation {
+		justify-content: center;
+	}
 	.navigation__list {
 		justify-content: center;
 	}
